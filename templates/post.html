@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Journal
+{% endblock %}
+
+{% block main %}
+    <h4>
+        Write your thoughts in a journal
+    </h4>
+    <form action="/post" method="post">
+        <div class="mb-3">
+           <textarea name="journal" rows="15" cols="50" placeholder="Write Your Thoughts"></textarea>
+        </div>
+        <input type="checkbox" id="public" name="public">
+        <label for="public">Share</label><br>
+        <input type="checkbox" id="unknown" name="unknown">
+        <label for="unknown">Anonymous if Sharing</label><br>
+        <button class="btn btn-primary" type="submit">Share</button>
+    </form>
+
+
+{% endblock %}

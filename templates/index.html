@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Public Feed
+{% endblock %}
+{% block main %}
+    <h4>
+        Public Feed of Journals
+    </h4>
+    <body>
+    {% for log in logs %}
+        <section class="section">
+            <header class="header">
+                <div>
+                    <p>
+                        {{log["username"]}} &nbsp
+                    </p>
+                    <p>
+                        {{log["date"]}}
+                    </p>
+
+                </div>
+            </header>
+            <div class="card">
+                <p>
+                    {{log["journal"] }}
+                </p>
+            </div>
+        </section>
+    {% endfor %}
+    </body>
+
+{% endblock %}
