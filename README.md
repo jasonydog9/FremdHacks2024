@@ -1,3 +1,4 @@
+https://brighter-days-b4b74c668a43.herokuapp.com/login
 ## Inspiration
 The inspiration for Brighter Days stemmed from the need for a safe and anonymous platform where individuals could freely express their thoughts and emotions regarding mental health and suicide without fear of judgment.
 
